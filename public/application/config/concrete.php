@@ -1,6 +1,10 @@
 <?php
 
 return [
+    'updates' => [
+        // Skip the automatic check of new Concrete versions availability
+        'skip_core' => true,
+    ],
     'debug' => [
         'display_errors' => true, // (true | false)
         'detail' => 'debug', // (message | debug)
@@ -26,10 +30,6 @@ return [
         // Those are only used when using LESS files
         'compress_preprocessor_output' => true, // Compress LESS Output
         'generate_less_sourcemap' => true, // Enable source maps in generated CSS files
-    ],
-    'updates' => [
-        // Skip the automatic check of new Concrete versions availability
-        'skip_core' => true,
     ],
     'email' => [
         'enabled' => true,
