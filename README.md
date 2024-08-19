@@ -69,7 +69,7 @@ Composer, NPM, Sass, Gulp, PHPUnit, Prettier, Stylelint, ESLint
 9. Set php version and timezone in `.env` file.
 
     ```
-    APP_PHP_VERSION=8.2
+    APP_PHP_VERSION=8.3
     APP_TZ=Europe/Warsaw
     ```
 
@@ -106,7 +106,8 @@ Composer, NPM, Sass, Gulp, PHPUnit, Prettier, Stylelint, ESLint
     --site-locale: Main/first installed language on site \
     --timezone: Timezone, enter the same as APP_TZ in .env file \
     --admin-email: Admin account email \
-    --admin-password: Admin account password
+    --admin-password: Admin account password \
+    --starting-point: Set one from: theme / atomik_blank / atomik_full / elemental_full 
 
     ```
     php public/index.php c5:install --allow-as-root -n --db-server=mariadb --db-username=root --db-password=root --db-database=default --starting-point=theme --site="Sitename" --language=en_US --site-locale=en_GB --timezone=Europe/Warsaw --admin-email=example@email.com --admin-password="password"
@@ -124,7 +125,7 @@ Composer, NPM, Sass, Gulp, PHPUnit, Prettier, Stylelint, ESLint
     rm public/application/config/database.php
     ```
 
-    Change required permissions (setting 777 is fine for localhost only)
+    Change required permissions (for localhost only)
 
     ```
     chmod -R 777 public/application/config public/application/files public/packages
