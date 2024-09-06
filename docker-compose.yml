@@ -34,7 +34,7 @@ services:
             - ./:/var/www/html
 
     db:
-        image: mariadb:11.5.2
+        image: mariadb:10.5.9
         container_name: ${APP_NAME}-db
         hostname: ${DB_HOSTNAME}
         restart: always
